@@ -1,0 +1,173 @@
+{
+  "main": {
+    "id": "4f0ed35dba4c42f3",
+    "type": "split",
+    "children": [
+      {
+        "id": "20724348b512196b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "78b466d6d23b5913",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/Bash/Alias e funzioni.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "59e86a907bbc9fe0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/Campo di visibilità.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "05282c824e9b255a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/Bash/History.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fcf92f7ebe87b4a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "7827fdc6e3d29346",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "08620b6ee7dc3e21",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "258beeb668e83952",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "867794fa200bab08",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c471f7c40b626622",
+    "type": "split",
+    "children": [
+      {
+        "id": "23328ece04485327",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4c0730dc295a23a5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Teoria/Bash/History.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "22f7a20963ee3905",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Teoria/Bash/History.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "25bcf8b443503c8e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ac4bd187325b00db",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Teoria/Bash/History.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "05282c824e9b255a",
+  "lastOpenFiles": [
+    "Teoria/Bash/Alias e funzioni.md",
+    "Teoria/Bash/History.md",
+    "Teoria/Campo di visibilità.md"
+  ]
+}
