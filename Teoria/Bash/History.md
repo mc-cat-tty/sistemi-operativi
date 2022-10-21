@@ -51,3 +51,40 @@ Cosa fa?
 2. sostituisce pattern con substitution
 3. esegue il comando risultante (e di conseguenza lo inserisce le buffer)
 
+## Espansione
+Operatori di espansione della storia dei comandi. 
+
+### Operatore !
+- `!N` espande l'N-esimo comando presente nell'history buffer
+- `!-N` espande l'N-ultimo comando presente nella history. Attenzione: il conteggio parte dal comando attuale, che non è ancora presente nell'history buffer
+- `!!` è un alias di `!-1`
+- `^` sostituzione stringhe del comando precedente: `^S1^S2^` sistituisce S1 con S2 nel comando precedente e lancia il comando così modificato. `^S^` rimuove la stringa S dal comando precedente
+
+### Espansione generica
+`E:s/S1/S2` dove:
+- E è uno degli operatori di espansione
+- S1 è la stringa da sostituire
+- S2 è la stringa sostituita
+
+Esempio: `!13:s/-l/-la
+
+## Scorciatoie
+Per navigare nella history ho a disposizione:
+- *Up* o *Ctrl-p* per il comando precedente
+- *Down* o *Ctrl-n* per il comando successivo
+- *Alt-<* inizio history
+- *Alt-\>* fine history
+- *Alt-.* ultimo argomento
+- *Alt-N-.* dove N è l'arogmento da recuperare
+- *Ctrl-r* ricerca incrementale all'indietro
+
+Per navigare all'interno di un comando:
+- *Ctrl-e* fine comando
+- *Ctrl-a* inizio comando
+- *Alt-b* una parola indietro
+- *Alt-f* una parola avanti
+- *Alt-d* cancella fino a fine parola
+- *Alt-backspace* cancella fino a inizio parola
+- *Ctrl-u* cancella fino a inizio riga
+- *Ctrl-k* cancella fino a fine riga
+- *Ctrl-\_* undo

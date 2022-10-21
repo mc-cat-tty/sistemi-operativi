@@ -4,47 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "20724348b512196b",
+        "id": "a6e4aa5dbda54bf3",
         "type": "tabs",
         "children": [
           {
-            "id": "78b466d6d23b5913",
+            "id": "d842e6e583fbc94c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teoria/Bash/Alias e funzioni.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "59e86a907bbc9fe0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teoria/Campo di visibilità.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "05282c824e9b255a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teoria/Bash/History.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoria/Bash/History.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoria/Bash/History.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,25 +118,26 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Teoria/Bash/History.md"
-              }
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "05282c824e9b255a",
+  "active": "d842e6e583fbc94c",
   "lastOpenFiles": [
-    "Teoria/Bash/Alias e funzioni.md",
+    "Teoria/Documentazione/Help e Man.md",
     "Teoria/Bash/History.md",
-    "Teoria/Campo di visibilità.md"
+    "Teoria/Bash/Type.md",
+    "Teoria/Bash/Alias e funzioni.md",
+    "Teoria/Bash/Campo di visibilità.md",
+    "Teoria/Bash/Untitled.md"
   ]
 }
