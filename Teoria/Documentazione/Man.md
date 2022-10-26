@@ -1,19 +1,4 @@
-Bash mette a disposizione una serie di comandi per ottenere la documentazione dei comandi.
-
-# Comando help
-`help` fornisce una descrizione dei comandi builtin. Lanciato senza comandi lista la sinossi di tutti i comandi builtin.
-
-`help CMD` fornisce informazioni sul comando *CMD* con la seguente struttura:
-- sinossi in forma Back-MNaur
-- descrizione breve
-- descrizione estesa
-- opzioni
-- argomenti
-- exit status
-
-È possibile usarlo con un pattern: `help PATTERN` come, ad esempio, `help "b*"` che ritorna l'help di tutti i comandi che iniziano per b.
-
-# Comando man
+# Man
 Il comando `man` - manual - fornisce la documentazione per i comandi esterni.
 
 Si utilizza così: `man VOCE`
@@ -63,3 +48,24 @@ Ricerca in più sezioni:
 man -S 1,3 printf  # In alternativa s minuscolo; ":" al posto di ","
 ```
 
+```bash
+man -a printf
+```
+Mostra tutte le pagine in cui compare `printf` 
+
+È necessario pagare per standardizzarsi POSIX. GNU Linux non segue lo standard POSIX.
+Le sezioni 1p, 3p ecc. indicano le pagine conformi allo standard POSIX.
+
+Si possono stampare tutte le pagine di manuale di una data sezione:
+```bash
+man -a -S 2 --regex '.*'  # Stampa tutte le pagine della sez. 2
+```
+La regex `.*` matcha tutto.
+
+```bash
+man -a -S 2 --regex '.*fork.*'
+```
+Mostra tutte le pagine che contengono la sottostringa `fork`
+
+## Bash builtins
+Le pagine di manuale delle distro Debian-based mettono a disposizione `man bash-builtins` che contiene sinossi e descrizione di tutti i comandi interni Bash.

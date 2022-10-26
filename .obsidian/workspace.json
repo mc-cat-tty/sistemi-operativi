@@ -11,11 +11,76 @@
             "id": "d842e6e583fbc94c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/Documentazione/Help.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b9f92de5d2467f32",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/Documentazione/Man.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7df13f300b7649b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/Documentazione/Apropos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3ccf26105f17acf6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/File/File System.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "98c688ba2659ec1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/File/Comandi per navigare il fs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "80fd44994cad4df0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/File/Contenuto file.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -65,7 +130,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c471f7c40b626622",
@@ -81,6 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Teoria/File/Contenuto file.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Teoria/File/Contenuto file.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +186,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Teoria/File/Contenuto file.md"
+              }
             }
           }
         ],
@@ -126,18 +196,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "d842e6e583fbc94c",
+  "active": "80fd44994cad4df0",
   "lastOpenFiles": [
-    "Teoria/Documentazione/Help e Man.md",
+    "Teoria/File/File System.md",
+    "Teoria/File/Contenuto file.md",
+    "Teoria/File/Comandi per navigare il fs.md",
+    "Teoria/Documentazione/Man.md",
+    "Teoria/Documentazione/Apropos.md",
+    "Teoria/Documentazione/Help.md",
     "Teoria/Bash/History.md",
     "Teoria/Bash/Type.md",
     "Teoria/Bash/Alias e funzioni.md",
-    "Teoria/Bash/Campo di visibilità.md",
-    "Teoria/Bash/Untitled.md"
+    "Teoria/Bash/Campo di visibilità.md"
   ]
 }
