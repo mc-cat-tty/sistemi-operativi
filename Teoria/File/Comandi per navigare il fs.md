@@ -1,4 +1,4 @@
-# Stat
+I open a note in a new pane but not when I open it# Stat
 Con `stat` si ottengono i metadati di un qualunque file (speciale, dir, link, ecc.)
 ```bash
 stat [options] filename
