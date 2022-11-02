@@ -183,13 +183,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "98c688ba2659ec1c",
   "lastOpenFiles": [
-    "Teoria/File/File System.md",
     "Teoria/File/Contenuto file.md",
+    "Teoria/File/File System.md",
     "Teoria/File/Comandi per navigare il fs.md",
     "Teoria/Documentazione/Man.md",
     "Teoria/Documentazione/Apropos.md",
