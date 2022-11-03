@@ -202,7 +202,18 @@ Guarderemo il formato *emacs*:
 https://www.gnu.org/software/findutils/manual/html_mono/find.html
 [[https://www.gnu.org/software/findutils/manual/html_mono/find.html#Regular-Expressions]]
 
-## Regex
+| Opzione      | Descrizione                                                                                 |
+| ------------ | ------------------------------------------------------------------------------------------- |
+| -atime n     | Filtra i file che sono stati acceduti l'ultima volta n\*24 ore fa (n è il numero di giorni) |
+| -perm mode   | Filtra i file che hanno il permesso *mode*                                                  |
+| -size n[kMG] | Filtra i file con dimensione n;                                                                                            |
+
+*n* può essere:
+- n esattamente *n*
+- +n più grande di *n*
+- -n più piccolo di *n*
+
+### Regex
 | wildcard  | significato                                                                                         |
 | --------- | --------------------------------------------------------------------------------------------------- |
 | .         | carattere qualunque                                                                                 |
@@ -236,4 +247,73 @@ Esercizio: boglio matchare tutti i file contenuti in /etc o sottocartelle, che t
 Le varianti **case insensitive** sono `-iname` e `-iregex`
 
 Cercare tutti file html (HTML, htm, HTM) nel sistema: `find / -iregex "^.*\.html?$"`
+
+### Specifica azioni
+Di default è `-print`
+
+L'azione `-printf` accetta una stringa di formato (specificatori che iniziano con "%").
+Per stampare percorso e permesso per ogni file trovato si può fare:
+```bash
+find / -printf "%p %m\n"
+```
+
+Vedi la pagina di manuale di `find` per conoscere gli altri specificatori.
+
+---
+`-exec` accetta un comando UNIX da eseguire su ciascun file individuato. Il placeholder che rappresenta il file individuato è `{}`.
+
+Sinossi:
+```bash
+find DIR EXPR -exec COMMAND '{}' \;
+```
+
+Attenzione: il comando deve essere terminato con `;`
+
+Esempio:
+```bash
+find /etc -name "*.conf" -exec file "{}" \;
+```
+
+"Paginatore" -> come `less`
+
+```bash
+find / -iregex "^.*\(\.bak\|~\)$" -exec file "{}" \; 2> /dev/null
+```
+
+## Grep
+Cerca i file in base ai contenuti.
+```bash
+grep root /etc/passwd
+```
+
+| Opzione       | Descrizione                                                                             |
+| ------------- | --------------------------------------------------------------------------------------- |
+| -n            | Stampa il numero di riga dei match. Ritorna un record composto da numero riga:contenuto |
+| -H            | Stampa il nome del file in cui è avvenuto il match come filename:row:content            |
+| -R SEARCH DIR | Ricerca ricorsiva a partire da una directory                                            |
+| -i            | Ricerca case-insensitive                                                                |
+| --color=yes   | Colora l'output di grep                                                                 |
+| -E 'REGEX'    | Supporta 3 famiglie di REGEX: base, estese, Perl. `-E` accetta una regex estesa         |
+| -v            | Inverte il match                                                                        |
+| -o            | Stampa solo la porzione di riga che matcha                                                                                        |
+
+Caratteri speciali delle Regex Estese:
+- {N} match dell'espressione precedente N volte
+- {N,} almeno N volte
+- {N,M} da N a M volte
+- {,M} fino a M volte
+- \[\[:alnum:\]\] ma anche:
+	- alpha
+	- blank
+	- digit
+	- lower
+	- upper
+	- space
+
+Ricerca indirizzi IP in `/etc/hosts`:
+```bash
+grep --color=yes -nE '([[:digit:]]{1,3}\.){3}[[:digit:]]{1,3}' /etc/hosts
+```
+
+PCRE = Perl Compatible Regular Expressions
 
