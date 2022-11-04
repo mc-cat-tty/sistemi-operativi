@@ -38,3 +38,13 @@ ln -s TARGET LINK_NAME
 I link simbolici sono accessibili a tutti (hanno tutti i permessi possibili), perchè è il file target a determinare permessi effettivi.
 
 Il contenuto di un link simbolico è grande quanto il percorso memorizzato dal link stesso.
+
+## Readlink
+Risolve i collegamenti simbolici:
+```bash
+readlink F1 F2 ... Fn
+```
+Se Fi è un collegamento simbolico lo risolve, altrimenti non stampa nulla.
+
+Per risolvere collegamenti in maniera ricorsiva si usa l'opzione `-f`. Da usare ad esempio su `/usr/bin/editor`.
+
