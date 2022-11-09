@@ -137,4 +137,14 @@ I comandi UNIX sono filtri, ovvero applicazioni che applicano trasformazioni su 
 BASH fornisce la **pathname expansion** attraverso **widlcards**. I modelli di pattern sono:
 - ? qualunque carattere
 - * qualunque sequenza di caratteri
-- 
+- \[C1C2...\] carattere appartenente alla lista
+- \[!C1C2...\] carattere esterno alla lista
+- \[^C1C2...\] carattere esterno alla lista
+- \[C1-C2\] carattere nel range C1-C2
+- prefix{str1,str2} viene espansa in `prefixstr1 prefixstr2`. Utile per `cp file_{old,new}`
+
+## Trappole
+`find /etc -name *.conf` non fa quello che vorremmo (elencare tutti i file con suffisso *.conf* in */etc*) se nella cartella corrente è presente un oggetto che matcha il pattern (espansa da BASH). Oppure va in errore se ci sono due o più file che matchano, perchè riceve un numero illegale di argomenti.
+
+Devo usare il quoting (forte o debole) per farlo funzionare come vorrei.
+
