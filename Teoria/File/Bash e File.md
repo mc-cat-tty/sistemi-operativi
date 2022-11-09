@@ -109,3 +109,32 @@ Associa allo stderr lo stdout, poi associa allo stdout filename. Quindi gli erro
 ls . nonesiste > FILENAME 2>&1
 ```
 Fa quello che ci aspetteremmo: associa a stdout FILENAME, poi associa a STDERR STDOUT, quindi FILENAME.
+
+## Fine opzioni
+`--` indica che sono finite le opzioni
+
+## Apertura fd su terminale
+`exec 3< /etc/passwd` crea il descrittore con id 3 (in lettura) associato al file */etc/passwd*.
+Posso leggere la riga di un file a partire dal file descriptor con `read -u 3 line`, stampandola con `echo $line`
+
+Per aprirlo in scirttura `exec 4> output.txt`
+Per redirezionarlo faccio `echo "str" >&4`
+
+Chiusura fd:
+```bash
+exec 3<&-
+exec 4>&-
+```
+
+## Filtri
+I comandi UNIX sono filtri, ovvero applicazioni che applicano trasformazioni su un inputstream restituendo un outputstream.
+
+2 possibili modalità:
+- standalone: uso file di appoggio
+- combinata: pipe
+
+## Espansione
+BASH fornisce la **pathname expansion** attraverso **widlcards**. I modelli di pattern sono:
+- ? qualunque carattere
+- * qualunque sequenza di caratteri
+- 
