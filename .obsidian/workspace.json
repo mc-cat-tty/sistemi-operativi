@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9538a9160c5c3618",
+        "id": "4155c5fbb477a27c",
         "type": "tabs",
         "children": [
           {
-            "id": "76fcbf7fd3c4d560",
+            "id": "48d25dd3abe9f21c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -136,8 +136,9 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "76fcbf7fd3c4d560",
+  "active": "48d25dd3abe9f21c",
   "lastOpenFiles": [
+    "Teoria/Filesystem/Introduzione.md",
     "Teoria/Sicurezza/Autorizzazione.md",
     "Teoria/Sicurezza/Autenticazione.md",
     "Teoria/Sicurezza/Gestione utenti.md",
@@ -146,7 +147,6 @@
     "Teoria/File/Archivi.md",
     "Teoria/File/Collegamenti.md",
     "Teoria/File/Comandi per navigare il fs.md",
-    "Teoria/File/Contenuto file.md",
-    "Teoria/File/File System.md"
+    "Teoria/File/Contenuto file.md"
   ]
 }
