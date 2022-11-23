@@ -57,3 +57,6 @@ Svantaggi:
 - devo usare dei meccanismi di sync per accedere alle risorse in modo consistente: semafori (verde vai, rosso fermo). Questo rellenta il sistema, perchè i thread, che potrebbero eseguire in parallelo, devono attendere il rilascio della risorsa.
 
 Vedi: locking e unlocking
+
+TCB - Thread Control Block
+PCB - Process Control Blocko dei campi contenuti nel descrittore di processo è l'identificatore di processo (Process IDentifier, PID).Uno dei campi contenuti nel descrittore di thread è l'identificatore di thread (Thread IDentifier, TID
