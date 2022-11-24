@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "355b681211f2f3f6",
+        "id": "7e5ed8de645c22d5",
         "type": "tabs",
         "children": [
           {
-            "id": "52830cbd3066c533",
+            "id": "fe2054f1ca9e02cb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/Processi/IPC.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Teoria/Processi/IPC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Teoria/Processi/IPC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Teoria/Processi/IPC.md"
+              }
             }
           }
         ],
@@ -128,17 +136,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "52830cbd3066c533",
+  "active": "fe2054f1ca9e02cb",
   "lastOpenFiles": [
-    "Teoria/Processi/Creazione.md",
-    "Teoria/Processi/Introduzione.md",
+    "Teoria/Processi/Creazione e Distruzione.md",
     "Teoria/Processi/Individuazione.md",
+    "Teoria/Processi/Introduzione.md",
+    "Teoria/Processi/IPC.md",
+    "Teoria/Processi/Distruzione.md",
     "Teoria/Filesystem/Controllo di Consistenza.md",
     "Teoria/Filesystem/Mount.md",
     "Teoria/Filesystem/Partizionamento e formattazione.md",
     "Teoria/Filesystem/Introduzione.md",
-    "Teoria/Sicurezza/Autorizzazione.md",
-    "Teoria/Sicurezza/Autenticazione.md",
-    "Teoria/Sicurezza/Gestione utenti.md"
+    "Teoria/Sicurezza/Autorizzazione.md"
   ]
 }

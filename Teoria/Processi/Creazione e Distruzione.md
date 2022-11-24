@@ -47,4 +47,6 @@ Soluzione: `ramdisk` -> fs piccolo che contiene qualche script di boot e tutti i
 - `init` -> l'unico compito è quello di espandere l'albero dei processi (boot tree).
 - `kernel`
 
-## Comandi
+# Distruzione
+I processi diventano **orfani** quando il padre muore, ma i figlio devono rimanere in vita. Non possono rimanere pending e irraggiungibili nell'albero dei processi. Il kernel esegue il **reparenting** -> il padre diventa **init**
+Init viene chiamato anche **child reaper** per questa sua caratteristica.

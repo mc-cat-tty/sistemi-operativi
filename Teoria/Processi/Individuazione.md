@@ -27,3 +27,23 @@ Elenco tutti i processi di GNOME:
 ```bash
 pgrep -al '^bash.*^*'
 ```
+
+La variabile d'ambiente `$$` è il PID del processo attuale.
+Nota: vengono eseguite 2 istanze di `systemd` all'avvio del sistema: root e utente
+
+# pstree
+```bash
+pstree | less -Mr
+```
+
+| Opzione | Descrizione                                       |
+| ------- | ------------------------------------------------- |
+| -a      | Aggiungi argomenti                                |
+| -c      | Visualizzazione esplicita                         |
+| -p      | Aggiunge PID processi                             |
+| -H PID  | Evidenzia il ramo dell'albero in cui si trova PID |
+
+Catena processi fino al ramo che contiene l'ultima zsh creata:
+```bash
+pstree -H $(pgrep -n zsh)
+```
