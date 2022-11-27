@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5faa29ea4d7195ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/Processi/Pipe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "28c0cd7f3635755b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/Processi/Job Control.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoria/Conferenza Informatica Forense.md",
+                "file": "Teoria/Processi/Job Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoria/Conferenza Informatica Forense.md",
+                "file": "Teoria/Processi/Job Control.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoria/Conferenza Informatica Forense.md"
+                "file": "Teoria/Processi/Job Control.md"
               }
             }
           }
@@ -136,8 +161,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "457ee4866af37f11",
+  "active": "28c0cd7f3635755b",
   "lastOpenFiles": [
+    "Teoria/Processi/Pipe.md",
+    "Teoria/Conferenza Informatica Forense.md",
     "Teoria/Processi/IPC.md",
     "Teoria/Processi/Creazione e Distruzione.md",
     "Teoria/Processi/Individuazione.md",
@@ -145,8 +172,6 @@
     "Teoria/Processi/Distruzione.md",
     "Teoria/Filesystem/Controllo di Consistenza.md",
     "Teoria/Filesystem/Mount.md",
-    "Teoria/Filesystem/Partizionamento e formattazione.md",
-    "Teoria/Filesystem/Introduzione.md",
-    "Teoria/Sicurezza/Autorizzazione.md"
+    "Teoria/Filesystem/Partizionamento e formattazione.md"
   ]
 }
