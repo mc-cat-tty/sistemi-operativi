@@ -33,3 +33,4 @@ Un gruppo di processi può trovarsi in due stati:
 - **background** (secondo piano). Più job possono trovarsi in background e scrivere sul terminale.
 
 Se un processo cerda cerca di leggere da STDIN riceve dal kernel SIGTTIN.
+
