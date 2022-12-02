@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1265d6bf5747818c",
+            "id": "0125239d93325b67",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoria/Processi/Pipe.md",
+                "file": "Teoria/Elevazione Privilegi/Privilegi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "da197b5fea184f58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/Elevazione Privilegi/Comandi.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoria/Processi/Pipe.md",
+                "file": "Teoria/Elevazione Privilegi/Privilegi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoria/Processi/Pipe.md",
+                "file": "Teoria/Elevazione Privilegi/Privilegi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoria/Processi/Pipe.md"
+                "file": "Teoria/Elevazione Privilegi/Privilegi.md"
               }
             }
           }
@@ -136,17 +148,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "1265d6bf5747818c",
+  "active": "0125239d93325b67",
   "lastOpenFiles": [
+    "Teoria/Elevazione Privilegi/Comandi.md",
+    "Teoria/Elevazione Privilegi/Privilegi.md",
+    "Teoria/Processi/Pipe.md",
     "Teoria/Processi/Job Control.md",
     "Teoria/Processi/Introduzione.md",
     "Teoria/Processi/Individuazione.md",
     "Teoria/Processi/Creazione e Distruzione.md",
-    "Teoria/Processi/Pipe.md",
     "Teoria/Processi/IPC.md",
     "Teoria/Conferenza Informatica Forense.md",
-    "Teoria/Processi/Distruzione.md",
-    "Teoria/Filesystem/Controllo di Consistenza.md",
-    "Teoria/Filesystem/Mount.md"
+    "Teoria/Processi/Distruzione.md"
   ]
 }
