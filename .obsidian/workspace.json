@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3c3f4c0357aea92f",
+        "id": "88803890f54e6959",
         "type": "tabs",
         "children": [
           {
-            "id": "0125239d93325b67",
+            "id": "b9d56ff7d598c1fc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teoria/Elevazione Privilegi/Privilegi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "da197b5fea184f58",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teoria/Elevazione Privilegi/Comandi.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -97,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoria/Elevazione Privilegi/Privilegi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoria/Elevazione Privilegi/Privilegi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Teoria/Elevazione Privilegi/Privilegi.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -148,7 +128,7 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "0125239d93325b67",
+  "active": "b9d56ff7d598c1fc",
   "lastOpenFiles": [
     "Teoria/Elevazione Privilegi/Comandi.md",
     "Teoria/Elevazione Privilegi/Privilegi.md",

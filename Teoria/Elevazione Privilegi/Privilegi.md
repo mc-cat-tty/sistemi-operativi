@@ -96,51 +96,73 @@ Le **permitted capability** sono concesse dal kernel al programma. Il programma 
 Non si possono riprendere le capability rilasciate.
 
 ## Capability effettive
-Sottoinsieme delle capability effettive, dopo l'applicazione del filtro all'avvio del processo.
+Le **effective capability** sono un sottoinsieme delle capability effettive, dopo l'applicazione del filtro all'avvio del processo.
 
-Questo sottoset di capability può essere modificato a runtime (il drop non è permanente)-
+Questo sottoset di capability può essere modificato a runtime (il drop non è permanente). Il processo che vuole abbassare temporaneamente i suoi privilegi spegne le capability effettive, poi le riattiva quando necessario. 
 
 In breve:
 - drop c. permessa -> permanete
 - drop c. effettive -> temporaneo
 
 ## Capability eredite
-Trasferite dal processo padre al figlio.
+Sono un sottoinsieme delle capability permesse, che un processo può trasferire ad un nuovo processo figlio, nel campo capability permesse, quando carica una nuova immagine in memoria.
+
+Le capability vengono ereditate quando un processo esegue una nuova immagine con `execve()`.
 
 ## Capability di file
-Come per l'algoritmo di controllo dei permessi, le capability del processo vengono confrontate con quelle di file.
+https://man7.org/linux/man-pages/man7/capabilities.7.html
 
+Come per l'algoritmo di controllo dei permessi, le capability del processo vengono confrontate con quelle di file. Ogni file che contiene informazioni sulle CAPs, mantiene al suo interno 3 insiemi.
 Sono:
-- permesse -> 
-- effettive
-- ereditabili -> messe in AND bit a bit con le capability ereditabili del processo
+- permesse -> capability inserite nell'insieme delle capability permesse all'avvio dell'immagine
+- effettive -> un singolo bit. Se acceso il processo nato dall'esecuzione di `execve()` ha il set delle effective capability = set permitted capability. Altrimenti effective capability è vuoto all'avvio.
+- ereditabili ->le capability ereditabili di un'immagine sono messe in AND bit a bit con le capability ereditabili dal processo. Il risultato sono le capability che un eventuale processo figlio potrà ereditare.
+
+Sono visualizzabili con `getcap`:
+```bash
+getcap /usr/bin/ping
+
+# ritorna: cap_net_raw=ep
+```
+
+Dove:
+- e -> effective
+- i -> inherited
+- p -> permitted
 
 ## Algortimo
+- P insieme delle capability del processo prima del caricamento di un'immagine
 - P' insieme delle capability del processo dopo l'esecuzione dell'immagine: Bash quando viene eseguito `ls` si forka, inizialmente è un processo Bash, ma successivamente con `execve` carica l'immagine del nuovo processo.
-- ...
+- F insieme delle CAPs del file
+- M maschera di CAPs da spegere per il processo figlio (che il padre non vuole far ereditare ai processi figli)
+
 ### Permitted
-```txt
+```
 P'(permitted) = 
 	(P(inheritable)  # capability ereditate dal processo prima di diventare P'
 	&  // and bit a bit
 	F(inheritable))  // capability ereditabili del file eseguibile
 	|
-	(F(permitted)
-	&
-	M)	
+	(F(permitted)  // capability permesse al file
+	&  // and bit a bit
+	M  // maschera che disattiva le caps del figlio, comandata dal padre
+	)	
 ```
 
 ## Effective
+Ricorda che F(effective) è un solo bit che indica se Eset deve essere vuoto o uguale Pset
 ```
-...
+P'(effective) = F(effective) ? P'(permitted) : 0  // dove P'(permitted) è l'insieme calcolato prima
 ```
 
 ### Inheritable
 ```
-...
+P'(inheritable) = P(inheritable)
 ```
 
 # Comportamenti anomali
 Cosa succede se l'amministratore imposta sia le capability che il SETUID/SETGID?
+
+Vengono usati prima i bit SETUID e SETGID, che forniscono l'intero set di privilegi, poi le CAPs.
 
 Vedi: lezione 5 sviluppo codice sicuro
