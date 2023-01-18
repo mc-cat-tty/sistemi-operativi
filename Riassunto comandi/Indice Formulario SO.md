@@ -1,18 +1,18 @@
 
 ## BASH
 
-- [Slide su BASH](https://weblab.ing.unimore.it/people/andreoli/didattica/sistemi-operativi/2022-23/5-bash/5-bash.pdf)
-- [Riassunto dei comandi](BASH)
+- [Slide su Bash](https://weblab.ing.unimore.it/people/andreoli/didattica/sistemi-operativi/2022-23/5-bash/5-bash.pdf)
+- [Bash](Bash.md)
 
 ## Documentazione
 
 - [Slide sulla documentazione](https://weblab.ing.unimore.it/people/andreoli/didattica/sistemi-operativi/2022-23/6-documentazione/6-documentazione.pdf)
 - [Documentazione](Documentazione.md)
 
-## File
+## File p
 
 - [Slide sui File](https://weblab.ing.unimore.it/people/andreoli/didattica/sistemi-operativi/2022-23/7-file/7-file.pdf)
-- [FILE](FILE.md)
+- [File](File.md)
 
 ## Autenticazione
 
@@ -42,4 +42,4 @@
 ## Debian
 
 - [Slide su Debian](https://weblab.ing.unimore.it/people/andreoli/didattica/sistemi-operativi/2022-23/13-gestione-software-debian/13-gestione-software-debian.pdf)
-- [Gestione Software in Deibian](Gestione%20Software%20in%20Deibian) 
+- [Gestione Software in Debian](Gestione%20Software%20in%20Debian.md)
