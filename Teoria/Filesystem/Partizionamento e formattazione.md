@@ -46,3 +46,9 @@ Elenco fs disponibili sul sistema: `ls -l /sbin/mkfs.*`
 > **Transaction log** (circular log): tiene traccia delle operazioni non committate verso una risorsa
 
 Al boot della macchina viene agganciato a `/` il fs della partizione primaria. Poi vengono montati tutti gli altri fs. Il fs all'avvio serve perchè il primo processo ad essere chiamato è `/sbin/init`
+
+## Layout
+Il layout di ogni filesystem dipende dalla sua versione ed implementazione. In generale sono sempre presenti 3 elementi comuni ad ogni fs moderno:
+- albero: mantiene la gerarchia che sussiste tra file e directory
+- area metadati: contiene le strutture di controllo (inodes - index nodes)
+- area dati: memorizza concretamente il contenuto dei file
