@@ -52,3 +52,12 @@ Il layout di ogni filesystem dipende dalla sua versione ed implementazione. In g
 - albero: mantiene la gerarchia che sussiste tra file e directory
 - area metadati: contiene le strutture di controllo (inodes - index nodes)
 - area dati: memorizza concretamente il contenuto dei file
+
+## Limitazioni
+### Massima dimensione di file
+- FAT32 -> 4 GB
+- EXT4 -> 16 TB
+### Massimo numero di partizioni primarie
+Dipendentemente dalla partition table scelta, si può avere una limitazione più o meno stretta:
+- MBR (old school Master Boot Record) -> massimo 4 partizioni primarie. Solitamente 3 primarie + 1 estesa, ulteriormente suddivisa in più partizioni logiche
+- GPT (GUID Partition Table) -> massimo 128 partizioni primarie
