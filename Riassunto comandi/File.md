@@ -353,20 +353,20 @@ ecco alcune dritte sulle REGEX:
 - \\+ → il carattere letterale +
 - \\? → il carattere letterale ?
 
-[c1-c2] → un carattere nell’intervallo [c1, c2]
-^ → inizio riga
-$ → fine riga
-R1\|R2 → espressione regolare R1 o R2
-\(REGEX\)→ REGEX viene associata ad un blocco e
-può essere riferita in seguito
-\N → riferimento blocco N (N=1, 2, 3, …
+- [c1-c2] → un carattere nell’intervallo [c1, c2]
+- ^ → inizio riga
+- $ → fine riga
+- R1\|R2 → espressione regolare R1 o R2
+- \(REGEX\)→ REGEX viene associata ad un blocco e
+- può essere riferita in seguito
+- \N → riferimento blocco N (N=1, 2, 3, …
 
-\w → un carattere dentro una parola
-\W → un carattere non dentro una parola
-\< → inizio di una parola
-\> → fine di una parola
-\b → bordo (inizio o fine parola)
-\B → interno (non inizio, non fine parola)
+- \w → un carattere dentro una parola
+- \W → un carattere non dentro una parola
+- \< → inizio di una parola
+- \> → fine di una parola
+- \b → bordo (inizio o fine parola)
+- \B → interno (non inizio, non fine parola)
 
 l’opzione **-iregex** o **-iname** sono uguali, semplicemente sono case insensitive
 
