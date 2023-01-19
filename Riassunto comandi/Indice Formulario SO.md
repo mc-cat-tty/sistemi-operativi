@@ -27,7 +27,7 @@
 ## File System
 
 - [Slide sul File System](https://weblab.ing.unimore.it/people/andreoli/didattica/sistemi-operativi/2022-23/10-file-system/10-file-system.pdf)
-- [File system](File%20system)
+- [File system](File%20system.md)
 
 ## Processi
 
