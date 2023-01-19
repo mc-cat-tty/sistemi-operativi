@@ -347,11 +347,11 @@ find /etc -name *.conf
 
 ecco alcune dritte sulle REGEX:
 
-\. → un carattere qualunque
-\+ → il carattere o l’espressione regolare precedente, ripetuta almeno una volta
-\? → il carattere o l’espressione regolare precedente, ripetuta zero o una volta
-\+ → il carattere letterale +
-\? → il carattere letterale ?
+- . → un carattere qualunque
+- \+ → il carattere o l’espressione regolare precedente, ripetuta almeno una volta
+- ? → il carattere o l’espressione regolare precedente, ripetuta zero o una volta
+- \\+ → il carattere letterale +
+- \\? → il carattere letterale ?
 
 [c1-c2] → un carattere nell’intervallo [c1, c2]
 ^ → inizio riga
