@@ -97,8 +97,8 @@ GNU/Linux offre un ulteriore supporto per l'esecuzione con privilegi elevati: le
 getcap [OPZIONI] file
 ```
 L'azione sulle capability è uno dei tre caratteri seguenti: 
-- + → aggiunge le capability 
-- - → rimuove le capability 
+- \+ → aggiunge le capability 
+- \- → rimuove le capability 
 - = → rimuove le capability considerate dagli insiemi effective, permitted ed inheritable, prima di impostarle.
 Gli insiemi delle capability sono uno o più dei seguenti insiemi: 
 - e → insieme delle capability effettive (effective) 
