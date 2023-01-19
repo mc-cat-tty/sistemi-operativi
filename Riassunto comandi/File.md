@@ -191,7 +191,7 @@ hexdump F1 F2 ... FN #stampa il contenuto in esadecimale
 
 ```bash
 hexdump -C [file] #visualizzazione canonica
-		-v [file] #visualizzazione verbosa
+	-v [file] #visualizzazione verbosa
 ```
 
 ### head
@@ -243,7 +243,7 @@ L’opzione -f  (--fields) di **cut** permette di selezionare i campi da
 un file
 
 ```bash
-cut	-f N   #l’N-mo campo
+cut	  -f N   #l’N-mo campo
 	  -f N-  #dall’N-mo campo a fine riga
 	  -f N-M #dall’N-mo campo all’M-mo campo
 	  -f N,M #l’N-mo campo e l’M-mo campo
@@ -296,7 +296,7 @@ senza opzioni concatena i file F1, F2, … FN; considera l’intera riga come un
 
 ```bash
 sort -n #ordinamento numerico
-	 -d #ordinamento alfanumerico (dizionario)
+     -d #ordinamento alfanumerico (dizionario)
      -h #ordinamento numerico “umano” (confronta numeri leggibili dagli umani, ad es. 2G e 1K)
      -M #ordinamento del mese (confronta JAN, FEB, …)
 ```
@@ -347,9 +347,9 @@ find /etc -name *.conf
 
 ecco alcune dritte sulle REGEX:
 
-. → un carattere qualunque
-+ → il carattere o l’espressione regolare precedente, ripetuta almeno una volta
-? → il carattere o l’espressione regolare precedente, ripetuta zero o una volta
+\. → un carattere qualunque
+\+ → il carattere o l’espressione regolare precedente, ripetuta almeno una volta
+\? → il carattere o l’espressione regolare precedente, ripetuta zero o una volta
 \+ → il carattere letterale +
 \? → il carattere letterale ?
 
@@ -368,7 +368,7 @@ può essere riferita in seguito
 \b → bordo (inizio o fine parola)
 \B → interno (non inizio, non fine parola)
 
-l’opzione ****************-iregex**************** o ************-iname************ sono uguali, semplicemente sono case insensitive
+l’opzione **-iregex** o **-iname** sono uguali, semplicemente sono case insensitive
 
 ```bash
 -atime n        #il file è stato acceduto l’ultima volta n*24 ore fa.
@@ -376,7 +376,7 @@ l’opzione ****************-iregex**************** o ************-iname********
 -size n[cwbkMG] #il file usa n unità di spazio su disco.
 ```
 
-l’opzione di base di ********find******** è il -print, per  modificarlo si aggiunge l’opzione
+l’opzione di base di **find** è il -print, per  modificarlo si aggiunge l’opzione
 
 ```bash
 find / -printf "%p %m\n" #fare man find per trovare le opzioni di printf
@@ -410,7 +410,7 @@ grep [opzioni] pattern [file]
 
 ```bash
 grep -n #stampa il numero di riga in cui è avvenuto un match con il pattern
-	 -H #stampa il nome del file in cui è avvenuto un match con il pattern
+     -H #stampa il nome del file in cui è avvenuto un match con il pattern
      -R #effettua una ricerca ricorsiva nel sottoalbero specificato come argomento
      -i #effettua una ricerca case insensitive
      -E 'REGEX' 
