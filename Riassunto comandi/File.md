@@ -418,20 +418,20 @@ grep -n #stampa il numero di riga in cui è avvenuto un match con il pattern
 
 Le regual expression sono molto simili a quelle emacs (studiate prima). Ecco le differenze;
 
-{N} → il carattere o l’espressione regolare precedente, ripetuta esattamente N volte
-{N,} → il carattere o l’espressione regolare precedente, ripetuta almeno N volte
-{M,N} → il carattere o l’espressione regolare precedente, ripetuta da M a N volte
+- {N} → il carattere o l’espressione regolare precedente, ripetuta esattamente N volte
+- {N,} → il carattere o l’espressione regolare precedente, ripetuta almeno N volte
+- {M,N} → il carattere o l’espressione regolare precedente, ripetuta da M a N volte
 
-[c1-c2] → un carattere nell’intervallo [c1, c2]
-\[[:alnum:]] → un carattere alfanumerico
-\[[:alpha:]] → un carattere alfabetico
-\[[:blank:]] → un carattere “blank” (spazio, tabulazione)
-\[[:digit:]] → un carattere cifra
-\[[:lower:]] → un carattere alfabetico minuscolo
-\[[:space:]] → un carattere “space” (tab, newline, form, feed, vertical tab, carriage return, spazio)
-\[[:upper:]] → un carattere alfabetico maiuscolo
+- [c1-c2] → un carattere nell’intervallo [c1, c2]
+- \[[:alnum:]] → un carattere alfanumerico
+- \[[:alpha:]] → un carattere alfabetico
+- \[[:blank:]] → un carattere “blank” (spazio, tabulazione)
+- \[[:digit:]] → un carattere cifra
+- \[[:lower:]] → un carattere alfabetico minuscolo
+- \[[:space:]] → un carattere “space” (tab, newline, form, feed, vertical tab, carriage return, spazio)
+- \[[:upper:]] → un carattere alfabetico maiuscolo
 
-R1|R2 → espressione regolare R1 o R2
+R1|R2 → espressione regolare R1 o R2 
 (REGEX) → REGEX viene associata ad un blocco e
 può essere riferita in seguito
 \N → riferimento blocco N (N=1, 2, 3, …)
