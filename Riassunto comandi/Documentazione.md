@@ -15,12 +15,12 @@ help COMANDO
 
 restituisce la documentazione formattata nel seguente modo
 
-**Sinossi**. Sintassi in forma Backus-Naur.
-**Descrizione breve.** Descrizione del comando in una riga.
-**Descrizione estesa**. Descrizione del comando in uno o più paragrafi.
-**Opzioni**. Elenco delle opzioni disponibili.
-**Argomenti**. Descrizione degli argomenti.
-**Valori di uscita**. Discussione del significato dei vari valori di uscita.
+- **Sinossi**. Sintassi in forma Backus-Naur.
+- **Descrizione breve.** Descrizione del comando in una riga.
+- **Descrizione estesa**. Descrizione del comando in uno o più paragrafi.
+- **Opzioni**. Elenco delle opzioni disponibili.
+- **Argomenti**. Descrizione degli argomenti.
+- **Valori di uscita**. Discussione del significato dei vari valori di uscita.
 
 ```bash
 help PATTERN1 PATTERN2 ..

@@ -46,7 +46,7 @@ ${var##pattern} #greedy, rimuove il match più grande
 
 per rappresentare sottostringhe in maniera efficiente si può sostituire con: abc → (a*c, a?c) dove
 
-- * sostituisce con un carattere qualsiasi anche il nulla
+- \* sostituisce con un carattere qualsiasi anche il nulla
 - ? matcha un singolo qualunque carattere
 
  Analogamente la rimozione di una sottostringa partendo dalla fine di essa si fa con
